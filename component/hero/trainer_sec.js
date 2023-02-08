@@ -1,6 +1,6 @@
 import style from "./hero.module.css";
 import Image from "next/image";
-import { CgProfile } from "react-icons/Cg";
+import { CgProfile } from "react-icons/cg";
 
 const Trainer = () => {
   const {
