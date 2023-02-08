@@ -1,0 +1,235 @@
+.bfb_head {
+  @apply w-[327px] relative left-[22px] mt-[90px] mb-[100px];
+}
+.bfb_head_text {
+  @apply h-[380px];
+}
+.bfb_head_text p:nth-child(1) {
+  font-family: Grotesque;
+  letter-spacing: 0.01em;
+  @apply text-[28px] leading-[140%] text-[#262524] font-bold;
+}
+.bfb_head_text p:nth-child(2) {
+  width: 300px;
+  height: 110px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180%;
+
+  letter-spacing: 0.01em;
+  color: #262524;
+  opacity: 0.6;
+}
+.bfb_head_btn {
+  position: absolute;
+  width: 176px;
+  height: 40px;
+  left: 0px;
+  top: 263px;
+
+  background: #264373;
+  box-shadow: 0px 14.2857px 57.1429px rgba(51, 78, 123, 0.3);
+  border-radius: 7.14286px;
+  color: white;
+}
+.shadow_remove {
+  box-shadow: none !important;
+}
+.bfb_head img {
+  width: 250px;
+  object-fit: cover;
+}
+.bfb_main {
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+.bfb_ex1 {
+  position: absolute;
+  left: 60px;
+  top: 12px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(35.49deg, #dd69c7 15.2%, #ffc0f3 87.25%);
+  border-radius: 28.9095px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bfb_ex1 img {
+  width: 28px;
+  height: 28px;
+}
+.bfb_ex2 {
+  background: linear-gradient(50.31deg, #4bace1 15.91%, #d8f1ff 92.82%);
+  box-shadow: 0px 2.31276px 8.09466px rgb(0 0 0 / 9%);
+  border-radius: 57.819px;
+  position: absolute;
+  top: 100px;
+  right: 6px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bfb_ex2 img {
+  width: 32px;
+  height: 32px;
+}
+.bfb_ex3 {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  left: 11px;
+  top: 210px;
+
+  background: #ffffff;
+  box-shadow: 0px 11.5638px 46.2552px rgba(51, 78, 123, 0.3);
+  border-radius: 5.7819px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.bfb_ex3_inner1 {
+  background: linear-gradient(45.98deg, #5478ef 19.69%, #d6dfff 92.63%);
+  box-shadow: 0px 11.5638px 46.2552px rgba(51, 78, 123, 0.3);
+  border-radius: 34.6914px;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.bfb_ex3_inner1 img {
+  width: 35px;
+}
+.bfb_ex3_inner2 {
+  border: none;
+}
+.bfb_ex3_inner2 p:nth-child(1) {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #262524;
+}
+.bfb_ex3_inner2 p:nth-child(2) {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #262524;
+  opacity: 0.5;
+}
+.bfb_alu {
+  position: absolute;
+  z-index: -1;
+  top: 60px;
+  left: 28px;
+}
+
+.bfb_ellipse {
+  position: absolute;
+  z-index: -1;
+  top: 16px;
+  right: 12px;
+}
+.bfb_wave {
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  z-index: -1;
+  width: 139px;
+}
+/****** Responsive Design *******/
+
+/* Custom, iPhone Retina-> Mobile-S */
+@media screen and (min-width: 320px) {
+}
+/*iPhone Retina -> Mobile-M */
+@media screen and (min-width: 375px) {
+  .bfb_head_text p:nth-child(1) {
+    width: 250px;
+  }
+}
+
+/*Phones -> Mobile-L */
+@media screen and (min-width: 425px) {
+  .bfb_main {
+    top: -68px;
+  }
+  .bfb_head_text p:nth-child(1) {
+    width: 350px;
+  }
+
+  .bfb_head_text p:nth-child(2) {
+    font-size: 13px;
+    width: 405px;
+  }
+  .bfb_head_btn {
+    top: 230px;
+  }
+  .bfb_ex1 {
+    height: 50px;
+    width: 50px;
+  }
+  .bfb_ex2 {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media screen and (min-width: 768px) {
+  .bfb_head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    top: 30px;
+  }
+
+  .bfb_main {
+    top: -55px;
+    width: 400px;
+  }
+  .bfb_main_img  {
+    width: 320px !important;
+  }
+  .bfb_head_text {
+    order: 2;
+  }
+  .bfb_head_btn {
+    position: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 198px;
+  }
+  .bfb_head_text p:nth-child(1) {
+    width: 421px;
+    height: fit-content;
+    font-size: 35px;
+  }
+  .bfb_head_text p:nth-child(2) {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media screen and (min-width: 1200px) {
+}

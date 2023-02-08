@@ -1,0 +1,83 @@
+.acsb_head {
+  background: linear-gradient(87.05deg, #6462f0 0%, #9190e9 95.5%);
+  @apply w-[358px] h-[412px] rounded-[30px] ml-[15px] mt-[60px] grid items-center justify-around;
+}
+.acsb_task_wrap {
+  grid-template-columns: 100px 1fr;
+  @apply grid relative gap-[20px];
+}
+.acsb_task_logo {
+  backdrop-filter: blur(32px);
+  @apply w-[80px] h-[80px] bg-[#fff] opacity-20 rounded-[20px];
+}
+.acsb_task_img {
+  @apply absolute top-5 left-[21px] w-[34px] text-[44px];
+}
+.acsb_task_text {
+  font-family: Poppins;
+  @apply text-white;
+}
+.acsb_task_text p:nth-child(1) {
+  font-style: normal;
+  letter-spacing: 0.01em;
+  @apply w-[132px] h-[56px] text-[16px] text-[#fff] leading-[28px];
+}
+.acsb_task_text p:nth-child(2) {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  @apply h-[28px] text-[16px] text-[#fff] opacity-50 leading-[28px];
+}
+.acsb_task_text p:nth-child(2) svg {
+  @apply inline text-[18px];
+}
+.acsb_task_black_icon svg {
+  color: black !important;
+}
+
+/****** Responsive Design *******/
+
+/* Custom, iPhone Retina-> Mobile-S */
+@media screen and (min-width: 320px) {
+  .acsb_head {
+    width: 320px;
+  }
+}
+/*iPhone Retina -> Mobile-M */
+@media screen and (min-width: 375px) {
+  .acsb_head {
+    width: 350px;
+  }
+}
+
+/*Phones -> Mobile-L */
+@media screen and (min-width: 425px) {
+  .acsb_task_text p:nth-child(1) {
+    font-size: 18px;
+  }
+  .acsb_task_wrap {
+    margin-left: -80px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media screen and (min-width: 768px) {
+  .acsb_head {
+    width: 95%;
+    height: max-content;
+    display: flex;
+    gap: 44px;
+    box-sizing: content-box;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media screen and (min-width: 1200px) {
+}
