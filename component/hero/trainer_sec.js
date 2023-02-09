@@ -1,67 +1,53 @@
-import style from "./hero.module.css";
 import Image from "next/image";
 import { CgProfile } from "react-icons/cg";
-
+// border-2 border-[#abc]
 const Trainer = () => {
-  const {
-    hero_triner,
-    hero_triner_ellipse,
-    hero_triner_curve,
-    hero_triner_img,
-    hero_triner_wave,
-    hero_triner_mem,
-    hero_triner_circle,
-    hero_triner_ex1,
-    hero_triner_ex2,
-    hero_triner_tmb,
-    hero_triner_tmb_img,
-    hero_triner_mem_text,
-  } = style;
   return (
-    <div className={hero_triner}>
-      <div className={hero_triner_img}>
+    <div className="border-2 border-[#abc] max-w-[300px] ">
+      <div className=" max-w-[280px]">
         <Image
+          className="w-full h-full object-cover"
           src={`/Img/traning_img.jpg`}
           alt="Triner Picture"
-          width={"210"}
-          height={"200"}
+          height={200}
+          width={300}
         />
       </div>
-      <div className={hero_triner_curve}>
+      {/* <div className="">
         <img src="/Img/curve.svg" alt="" />
       </div>
-      <div className={hero_triner_ellipse}>
+      <div className="">
         <img src="/Img/ellipse.svg" alt="" />
       </div>
-      <div className={hero_triner_wave}>
+      <div className="">
         {[...Array(28)].map((val, i) => (
           <span key={i}>
             <img src="/Img/wave.svg" alt="" />
           </span>
         ))}
       </div>
-      <div className={hero_triner_mem}>
-        <div className={hero_triner_circle}>
+      <div className="">
+        <div className="">
           <img src="Img/kick.svg" alt="" />
         </div>
-        <div className={hero_triner_mem_text}>
+        <div className="">
           <span className="font-semibold">150+</span>
           <div className="text-[#262524] opacity-70">Members</div>
         </div>
       </div>
-      <div className={hero_triner_ex1}>
+      <div className="">
         <img src="Img/person.svg" alt="" />
       </div>
-      <div className={hero_triner_ex2}>
+      <div className="">
         <img src="Img/stretching.svg" alt="" />
       </div>
-      <div className={hero_triner_tmb}>
-        <div className={hero_triner_tmb_img}>
+      <div className="">
+        <div className="">
           <CgProfile />
         </div>
         <p>Zaqky Simorang</p>
         <small>Trainer</small>
-      </div>
+      </div> */}
     </div>
   );
 };

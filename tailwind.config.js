@@ -4,12 +4,17 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./component/**/*.{js,ts,jsx,tsx}",
- 
+
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Grotesque: ["Grotesque",'sans'],
+        Poppins: ["Poppins",'sans'],
+      },
+    },
   },
   plugins: [],
-}
+};
