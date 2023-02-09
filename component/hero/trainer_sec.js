@@ -3,7 +3,7 @@ import { CgProfile } from "react-icons/cg";
 // border-2 border-[#abc]
 const Trainer = () => {
   return (
-    <div className=" max-w-[300px] relative ml-[40px]">
+    <div className=" max-w-[300px] relative ml-[40px] mx-[50px]">
       {/* trainer img */}
       <div className="max-w-[210px] z-10 relative ml-[20px]">
         <Image
@@ -13,6 +13,7 @@ const Trainer = () => {
           height={200}
           width={300}
         />
+        {/* trainer profile */}
         <div className="absolute w-[45px] h-[45px] bg-gradient-to-r from-[rgba(84,120,239,1)] to-[rgba(214,223,255,1)] rounded-full flex justify-center items-center left-[-56px] bottom-[90px] shadow-[0px_11px_46px_rgba(51,78,123,0.3)]">
           <img className="w-[30px]" src="Img/person.svg" alt="" />
         </div>
@@ -23,13 +24,13 @@ const Trainer = () => {
           <div className="bg-[rgba(103,101,240,1)] rounded-full w-[40px] h-[40px] flex justify-center items-center text-white ">
             <CgProfile className="text-[20px]" />
           </div>
-          <p className="font-Poppins">Zaqky Simorang</p>
-          <small className="opacity-50">Trainer</small>
+          <p className="font-Poppins text-[11px]">Zaqky Simorang</p>
+          <small className="opacity-50 text-[9px]">Trainer</small>
         </div>
       </div>
       {/* curve */}
       <div className="absolute bottom-0 ">
-        <img src="/Img/curve.svg" alt="" />
+        <img className="max-w-[280px]" src="/Img/curve.svg" alt="" />
       </div>
       {/* ellipse */}
       <div className="absolute ml-1 max-w-[220px] bottom-0 -z-10">
@@ -43,7 +44,7 @@ const Trainer = () => {
           </span>
         ))}
       </div>
-      {/* trainer profile */}
+      {/* Number of member */}
       <div className="flex gap-2 rounded-lg p-1 bg-[#fff] absolute top-8 -left-12  z-10 ">
         <div className="w-[40px] h-[40px] rounded-full flex justify-center items-center bg-gradient-to-r from-[rgba(248,164,34,1)] to-[rgba(254,222,172,1)]">
           <img className="w-[25px]" src="Img/kick.svg" alt="" />
