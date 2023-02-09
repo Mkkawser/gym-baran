@@ -47,7 +47,7 @@ const Hero = () => {
           </button>
         </div>
         {/* hero brand  */}
-        <div className="pt-4 pb-8">
+        <div className="pt-4 pb-4">
           <p className="font-Grotesque">Brands:</p>
           <div className="max-w-[320px] flex justify-center items-center gap-[20px]">
             <div className="max-w-[100px]">
