@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { CgProfile } from "react-icons/cg";
-// border-2 border-[#abc]
 const Trainer = () => {
   return (
     <div className=" max-w-[300px] relative ml-[40px] mx-[50px]">
@@ -13,13 +12,15 @@ const Trainer = () => {
           height={200}
           width={300}
         />
-        {/* trainer profile */}
+        {/* exersice 1 */}
         <div className="absolute w-[45px] h-[45px] bg-gradient-to-r from-[rgba(84,120,239,1)] to-[rgba(214,223,255,1)] rounded-full flex justify-center items-center left-[-56px] bottom-[90px] shadow-[0px_11px_46px_rgba(51,78,123,0.3)]">
           <img className="w-[30px]" src="Img/person.svg" alt="" />
         </div>
+        {/* exersice 2 */}
         <div className="absolute w-[45px] h-[45px]   bg-gradient-to-r from-[rgba(75,172,225,1)] to-[rgba(216,241,255,1)] rounded-full flex justify-center items-center right-[-40px]  top-[60px] shadow-[0px_2px_8px_rgba(0, 0, 0, 0.09)]">
           <img className="w-[30px]" src="Img/stretching.svg" alt="" />
         </div>
+        {/* trainer profile */}
         <div className="absolute bg-white rounded-md grid justify-items-center p-2 max-w-[110px] bottom-[20px] right-[-40px] shadow-[0px_11px_46px_gba(51, 78, 123, 0.3)]">
           <div className="bg-[rgba(103,101,240,1)] rounded-full w-[40px] h-[40px] flex justify-center items-center text-white ">
             <CgProfile className="text-[20px]" />

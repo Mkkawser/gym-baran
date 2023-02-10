@@ -6,9 +6,9 @@ const Index = () => {
   return (
     <>
       <Hero />
-      {/* <HSide />
-      <Accessibility />
-      <BestFullBody /> */}
+      <HSide />
+       <Accessibility />
+     <BestFullBody />
     </>
   );
 };
